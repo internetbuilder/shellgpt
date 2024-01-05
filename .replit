@@ -1,0 +1,15 @@
+modules = ["python-3.10:v18-20230807-322e88b"]
+
+hidden = [".pythonlibs"]
+run = "pip install shell-gpt"
+
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "python3"
+
+[deployment]
+deploymentTarget = "gce"
+run = ["sh", "-c", "sgpt"]
+ignorePorts = true

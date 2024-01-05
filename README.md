@@ -384,7 +384,7 @@ docker run --rm \
 Example of a conversation, using an alias and the `OPENAI_API_KEY` environment variable:
 ```shell
 alias sgpt="docker run --rm --env OPENAI_API_KEY --volume gpt-cache:/tmp/shell_gpt ghcr.io/ther1d/shell_gpt"
-export OPENAI_API_KEY="your OPENAI API key"
+export OPENAI_API_KEY="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"
 sgpt --chat rainbow "what are the colors of a rainbow"
 sgpt --chat rainbow "inverse the list of your last answer"
 sgpt --chat rainbow "translate your last answer in french"
